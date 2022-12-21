@@ -1,0 +1,20 @@
+{
+    "name": "danila/php-coder",
+    "description": "Docs for PHP Coders`s interview",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Danila\\PhpCoder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Danila Minustin"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "michelf/php-markdown": "dev-lib"
+    }
+}
