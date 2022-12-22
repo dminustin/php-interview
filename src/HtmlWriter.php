@@ -13,7 +13,7 @@ class HtmlWriter extends BaseWriter
         //Do something
     }
 
-    public function makeDocument()
+    public function makeDocument(): static
     {
         $this->startDocument();
         foreach ($this->files as $filename) {
@@ -21,6 +21,12 @@ class HtmlWriter extends BaseWriter
             $this->writeAppend($this->preprocessCode($filename));
         }
         $this->finishDocument();
+        return $this;
+    }
+
+    public function getDocument(): string
+    {
+        return file_get_contents($this->document);
     }
 
     protected function preprocessCode(string $filename): string

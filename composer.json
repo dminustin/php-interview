@@ -15,6 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "michelf/php-markdown": "dev-lib"
+        "michelf/php-markdown": "dev-lib",
+        "dompdf/dompdf": "dev-master"
     }
 }

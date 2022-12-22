@@ -1,12 +1,14 @@
 <?php
 
 use Danila\PhpCoder\HtmlWriter;
+use Danila\PhpCoder\PDFWriter;
 
 $files = [
     'README',
     '250JUN',
     '250MID',
     '250SEN',
+    'LARAVEL',
     'PHP82',
     'PHP81',
     'PHP80',
@@ -18,4 +20,5 @@ $files = [
 
 require 'vendor/autoload.php';
 
-(new HtmlWriter($files))->makeDocument();
+$html = (new HtmlWriter($files))->makeDocument()->getDocument();
+//(new PDFWriter($html))->makeDocument();

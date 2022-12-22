@@ -6,5 +6,5 @@ abstract class BaseWriter
 {
     protected string $document;
 
-    abstract public function makeDocument();
+    abstract public function makeDocument(): static;
 }
