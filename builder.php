@@ -25,5 +25,5 @@ file_put_contents(__DIR__ . '/composer.json', json_encode($data, JSON_PRETTY_PRI
 
 system('git add .');
 system('git commit -m "' . $message . '"');
-system('git push origin master ' . $version);
+system('git push origin master');
 

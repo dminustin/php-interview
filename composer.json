@@ -2,7 +2,7 @@
     "name": "danila/php-coder",
     "description": "Docs for PHP Coders`s interview",
     "type": "project",
-    "version": "0.0.0.2",
+    "version": "0.0.0.3",
     "license": "MIT",
     "autoload": {
         "psr-4": {
